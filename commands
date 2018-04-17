@@ -1,0 +1,21 @@
+>>> contentRDD.collect()
+[u'PySpark is the python binding for the Spark Platform and API and not much different from the Java/Scala versions. A good starting point is the official page i.e Examples | Apache Spark. Python is dynamically typed, so RDDs can hold objects of multiple types. PySpark does not yet support a few API calls, such as lookup and non-text input files, though these will be added in future releases.']
+>>> contentRDD.take(1)
+[u'PySpark is the python binding for the Spark Platform and API and not much different from the Java/Scala versions. A good starting point is the official page i.e Examples | Apache Spark. Python is dynamically typed, so RDDs can hold objects of multiple types. PySpark does not yet support a few API calls, such as lookup and non-text input files, though these will be added in future releases.']
+
+Usage of Lambda functions
+
+https://www.python-course.eu/lambda.php
+
+>>> reduce(lambda x,y: x+y, [47,11,42,13])
+113
+>>> reduce(lambda x,y: x-y, [47,11,42,13])
+-19
+>>> reduce(lambda x,y: x>y, [47,11,42,13])
+False
+>>> reduce(lambda x,y: x if (x>y) else y, [47,11,42,13])
+47
+>>> reduce(lambda x,y: x if (x>y) else y, [47,11,42,53])
+53
+>>> reduce(lambda x, y: x+y, range(1,101))
+5050
